@@ -1,0 +1,46 @@
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><span class="lead">Add Robot </span></div>
+		<div class="panel-body">
+	        <div class="formcontainer">
+	            <div class="alert alert-success" role="alert" ng-if="addCtrl.successMessage">{{addCtrl.successMessage}}</div>
+	            <div class="alert alert-danger" role="alert" ng-if="addCtrl.errorMessage">{{addCtrl.errorMessage}}</div>
+	            <form ng-submit="addCtrl.submit()" name="myForm" class="form-horizontal">
+	                <input type="hidden" ng-model="addCtrl.robot.id" />
+	                <div class="row">
+	                    <div class="form-group col-md-12">
+	                        <label class="col-md-2 control-lable" for="uname">Name</label>
+	                        <div class="col-md-7">
+	                            <input type="text" ng-model="addCtrl.robot.name" id="uname" class="robotname form-control input-sm" placeholder="Enter robot name" required ng-minlength="3"/>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="form-group col-md-12">
+	                        <label class="col-md-2 control-lable" for="age">Description</label>
+	                        <div class="col-md-7">
+	                            <input type="text" ng-model="addCtrl.robot.description" id="description" class="form-control input-sm" placeholder="Enter robot description" />
+	                        </div>
+	                    </div>
+	                </div>
+	
+	                <div class="row">
+	                    <div class="form-group col-md-12">
+	                        <label class="col-md-2 control-lable" for="qunatity">Quantity</label>
+	                        <div class="col-md-7">
+	                            <input type="text" ng-model="addCtrl.robot.quantity" id="quantity" class="form-control input-sm" placeholder="Enter quantity" required ng-pattern="addCtrl.onlyIntegers"/>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="row">
+	                    <div class="form-actions floatRight">
+	                        <input type="submit"  value="{{!addCtrl.robot.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid || myForm.$pristine">
+	                        <button type="button" ng-click="addCtrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+	                    </div>
+	                </div>
+	            </form>
+    	    </div>
+		</div>	
+    </div>

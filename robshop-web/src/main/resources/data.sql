@@ -1,0 +1,2 @@
+insert into ROBOT(ROBOT_ID,ROBOT_NAME,ROBOT_DESC,ROBOT_QUANTITY) values(1,'The Dog','Dog robot',20);
+insert into ROBOT(ROBOT_ID,ROBOT_NAME,ROBOT_DESC,ROBOT_QUANTITY) values(2,'Human','Human robot',20);

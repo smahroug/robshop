@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RobShop</title>
+    <link rel="import" href="import.css.html">
+    <link rel="import" href="import.js.html">
+</head>
+
+<body data-ng-app="app">
+
+    <header id="site-header">
+        <div class="container">
+            <div class="pull-left logo"></div>
+            <ul class="pull-right menu">
+                <li><a href="#/">HOME</a></li>
+                <li><a href="#/add">ADD</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="main">
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </section>
+
+    
+    
+</body>
+</html>
