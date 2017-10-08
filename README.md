@@ -9,4 +9,6 @@ It will generate : robshop-web-0.0.1-SNAPSHOT-exec.jar
 run java -jar robshop-web-0.0.1-SNAPSHOT-exec.jar
 
 #Access
-http://localhost:8080/robshop/
+
+local : http://localhost:8080/robshop/
+heroku : http://robshop003.herokuapp.com/robshop/
