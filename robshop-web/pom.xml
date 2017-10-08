@@ -6,7 +6,6 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>robshop-web</artifactId>
-  <packaging>war</packaging>
   <name>robshop-web</name>
   <dependencies>
   		<dependency>
