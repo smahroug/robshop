@@ -7,7 +7,7 @@ import com.rbc.data.model.Robot;
 
 public interface RobotService {
 	
-	public List<Robot> listAllRobots();
+	public List<Robot> findAllRobots();
 
 	public Robot saveRobot(Robot robot);
 	

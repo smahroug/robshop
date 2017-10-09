@@ -24,7 +24,7 @@ public class RobotController {
 	
 	@RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Robot> getRobots() {
-		return robotService.listAllRobots();
+		return robotService.findAllRobots();
 	}
 	
 	@RequestMapping(value = "/find/{id}", method = RequestMethod.GET)

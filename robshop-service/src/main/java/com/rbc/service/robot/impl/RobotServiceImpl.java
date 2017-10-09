@@ -16,7 +16,7 @@ public class RobotServiceImpl implements RobotService{
 	private RobotDao robotDao;
 
 	@Override
-	public List<Robot> listAllRobots() {
+	public List<Robot> findAllRobots() {
 		return robotDao.findAll();
 	}
 
